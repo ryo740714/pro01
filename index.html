@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>切換圖片</title>
+
+
+<script language="javascript">
+var	thisPic=1;
+
+function	movePrev()
+{
+	if (window.document.images && thisPic > 1)
+	{
+		thisPic--;
+		window.document.myPic.src="ppic2/"+thisPic+".jpg";
+	}
+}
+
+function	moveNext()
+{
+	if (window.document.images && thisPic < 15)
+	{
+		thisPic++;
+		window.document.myPic.src="ppic2/"+thisPic+".jpg";
+	}
+}
+</script>
+
+
+</head>
+
+<body>
+
+
+<img src="ppic2/1.jpg" name="myPic" id="myPic" width="400" height="480" /><br />
+
+<a href="javascript:movePrev()">上一張</a>&nbsp;&nbsp;
+<a href="javascript:moveNext()">下一張</a>
+
+</body>
+</html>
