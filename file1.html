@@ -1,0 +1,17 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>js test1</title>
+		<script type="text/javascript">
+		function test(){
+		for(var Property in window.navigator)
+			window.document.write(Property + ":" + window.navigator[Property] + "<br>");
+		}
+		</script>
+	</head>
+	<body>
+		<input type = "button" value = "系統測試" onclick = "javascript:test()">
+		
+	</body>
+</html>
