@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Date Test</title>
+	<script language="javascript">
+		var myDate = new Date();
+		var myMonth = myDate.getMonth() +1;
+		document.write("Now: "+myDate+"<br>");
+		function fun1(){
+			window.alert('今天'+myDate.getDate()+'號');
+		}
+		function fun2(){
+			window.alert('星期'+myDate.getDay());
+		}
+		function fun3(){
+			window.alert('Month: '+myMonth);
+		}
+	</script>
+	</head>
+	<body>
+	<input type="button" id="bt_Date" value="Date" onclick="javascript:fun1()">
+	<input type="button" id="bt_Day" value="Day" onclick="javascript:fun2()">
+	<input type="button" id="bt_Month" value="Month" onclick="javascript:fun3()">
+	</body>
